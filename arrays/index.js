@@ -1,39 +1,27 @@
 const elementsOfArr = prompt("Input the array's elements", 'Nick, Michael, Emma, Lexi');
 const lengthOfArr = prompt("Input the array's length", '4');
 
-const newArr = [];
-const sortedArr = [];
-const arrWithDeletedElements = [];
-const result = [];
+const initialArr = [];
+const deletedElements = [];
+const ultimateArr = [];
 
 if (elementsOfArr && lengthOfArr) {
-    console.log('Initial array');
-    console.log(newArr);
 
-    newArr.push(...elementsOfArr.split(', '))
-    console.log(`Your array`);
-    console.log(newArr);
+    initialArr.push(...elementsOfArr.split(', '))
+    console.log(`Your array - ${initialArr}`);
 
-    console.log(`The length of the array`);
-    console.log(newArr.length);
 
-    console.log(`The length you have pointed`);
-    console.log(+lengthOfArr);
+    if (initialArr.length <= +lengthOfArr) {
+        initialArr.length = +lengthOfArr;
 
-    if (newArr.length <= +lengthOfArr) {
-        newArr.length = +lengthOfArr;
+        initialArr.sort();
+        console.log(`The sorted array - ${initialArr}`);
 
-        sortedArr.push(...newArr.sort());
-        console.log(`The sorted array`);
-        console.log(sortedArr);
-
-        if (sortedArr.length >= 4) {
-            arrWithDeletedElements.push(...sortedArr.splice(1, 3));
-            console.log(`The deleted array's elements`);
-            console.log(arrWithDeletedElements);
-            result.push(...sortedArr);
-            console.log(`Your ultimate array after processing`);
-            console.log(result);
+        if (initialArr.length >= 4) {
+            deletedElements.push(...initialArr.splice(1, 3));
+            console.log(`The deleted array's elements - ${deletedElements}`);
+            ultimateArr.push(...initialArr);
+            console.log(`Your ultimate array after processing - ${ultimateArr}`);
         } else {
             alert('Your sorted array doesnt have enough length to delete some elements!');
         }
