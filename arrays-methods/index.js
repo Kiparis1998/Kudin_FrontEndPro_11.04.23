@@ -1,15 +1,18 @@
 const arr = [16, -37, 54, -4, 72, -56, 47, 4, -16, 25, -37, 46, 4, -51, 27, -63, 4, -54, 76, -4, 12, -35, 4, 47];
 let multipliedNum = 1;
 
+const ELEMENT = 0;
+const AMOUNT_OF_ELEMENTS = 1;
+
 const sumAndAmount = arr.reduce((accum, item) => {
     if(item > 0) {
-        accum[0] += item;
-        accum[1]++;
+        accum[ELEMENT] += item;
+        accum[AMOUNT_OF_ELEMENTS]++;
         return accum;
     }
     return accum;
 }, [0, 0])
-console.log(`The array's sum is ${sumAndAmount[0]} and amount is ${sumAndAmount[1]}`);
+console.log(`The array's sum is ${sumAndAmount[ELEMENT]} and amount is ${sumAndAmount[AMOUNT_OF_ELEMENTS]}`);
 
 const minNum = arr.find(item => item === Math.min(...arr));
 const indexOfMin = arr.indexOf(minNum);
