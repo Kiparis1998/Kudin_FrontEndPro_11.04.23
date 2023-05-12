@@ -44,7 +44,7 @@ createDoubleArr = () => {
     for (let i = 1; i <= LENGTH_OF_EXTERNAL_ARRAY; i++) {
         const LENGTH_OF_INTERNAL_ARRAY = +prompt('Input the length of internal array', '3');
         const dataForInternalArray = prompt('Input your data using comma', 'Felix, Noah, Jane, Kate');
-        const dataToBeAddedToExternalArray = dataForInternalArray.split(',').slice(0, LENGTH_OF_INTERNAL_ARRAY);
+        const dataToBeAddedToExternalArray = dataForInternalArray.split(', ').slice(0, LENGTH_OF_INTERNAL_ARRAY);
         mainArray.push(dataToBeAddedToExternalArray);
     }
     return mainArray;
