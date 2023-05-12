@@ -39,36 +39,15 @@ const outputMath = doMath(firstNum, sign, secondNum);
 console.log(outputMath);
 
 createDoubleArr = () => {
-    const mainArr = [];
-    const mainArrLength = +prompt('Input length of your Main array', '4');
-    for (let i = 1; i <= 2; i++) {
-        const isArr = confirm('Is it an Inner array?');
-        if (isArr) {
-            const childArr = [];
-            const childArrLength = +prompt('Input length of your Inner array', '4');
-            for (let i = 1; i <= 2; i++) {
-                const elemOfArr = prompt('Input your elements', 'Jane, Nancy, Mikaela');
-                if (elemOfArr === null) return 'Incorrect input';
-                childArr.push(elemOfArr);
-            }
-            if (childArrLength < childArr.length) {
-                console.log('Forbidden to point the length less than your inner array\'s length');
-            } else {
-                childArr.length = childArrLength;
-            }
-            mainArr.push(childArr);
-        } else {
-            const elemOfArr = prompt('Input your elements', 'Michael, Noah, Felix');
-            if (elemOfArr === null) return 'Incorrect input';
-            mainArr.push(elemOfArr);
-        }
+    const mainArray = [];
+    const LENGTH_OF_EXTERNAL_ARRAY = +prompt('Input the length of main array', '2');
+    for (let i = 1; i <= LENGTH_OF_EXTERNAL_ARRAY; i++) {
+        const LENGTH_OF_INTERNAL_ARRAY = +prompt('Input the length of internal array', '3');
+        const dataForInternalArray = prompt('Input your data using comma', 'Felix, Noah, Jane, Kate');
+        const dataToBeAddedToExternalArray = dataForInternalArray.split(',').slice(0, LENGTH_OF_INTERNAL_ARRAY);
+        mainArray.push(dataToBeAddedToExternalArray);
     }
-    if (mainArrLength < mainArr.length) {
-        console.log('Forbidden to point the length less than your main array\'s length');
-    } else {
-        mainArr.length = mainArrLength;
-    }
-    return mainArr;
+    return mainArray;
 }
 
 const ultimateArr = createDoubleArr();
