@@ -1,8 +1,8 @@
 export class Building {
     allCribs = [];
 
-    constructor(MAX_AMOUNT_OF_CRIBS) {
-        this.MAX_AMOUNT_OF_CRIBS = MAX_AMOUNT_OF_CRIBS || 10;
+    constructor(maxAmountOfCribs) {
+        this.MAX_AMOUNT_OF_CRIBS = maxAmountOfCribs || 10;
     }
 
     addCrib(crib) {
