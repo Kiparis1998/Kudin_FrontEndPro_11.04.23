@@ -14,15 +14,18 @@ console.log(`${thirdStudent.name}'s average mark - ${thirdStudent.getAverageGrad
 
 
 for (let i = 1; i <= 12; i++) {
-    firstStudent.present();
     firstStudent.absent();
 }
 
-for (let i = 1; i <= 15; i++) {
+for (let i = 1; i <= 13; i++) {
+    firstStudent.present();
+}
+
+for (let i = 1; i <= 17; i++) {
     secondStudent.present();
 }
 
-for (let i = 1; i <= 7; i++) {
+for (let i = 1; i <= 8; i++) {
     secondStudent.absent();
 }
 
@@ -30,7 +33,7 @@ for (let i = 1; i <= 2; i++) {
     thirdStudent.absent();
 }
 
-for (let i = 1; i <= 20; i++) {
+for (let i = 1; i <= 23; i++) {
     thirdStudent.present();
 }
 
