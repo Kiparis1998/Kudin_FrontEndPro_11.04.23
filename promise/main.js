@@ -9,6 +9,7 @@ const warningMessage = document.querySelector('.warning');
 
 const POST_OPTION = 'posts';
 const COMMENT_OPTION = 'comments';
+
 const getData = (option, id = '') => {
     return new Promise((resolve, reject) => {
         fetch(`https://jsonplaceholder.typicode.com/${option}/${id}`)
