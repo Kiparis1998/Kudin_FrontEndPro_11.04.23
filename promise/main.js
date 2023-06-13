@@ -17,7 +17,6 @@ const getData = (option, id = '') => {
                 if ((id < 1 || id > 100) && option !== COMMENT_OPTION) {
                     throw new Error('Network response has had the incorrect input!');
                 } else if (!response.ok) {
-                    console.log(response)
                     throw new Error('Network response has had failure or you have input the incorrect data!');
                 }
                 return response.json();
