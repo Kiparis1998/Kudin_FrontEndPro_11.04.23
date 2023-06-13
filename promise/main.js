@@ -14,8 +14,11 @@ const getData = (option, id = '') => {
     return new Promise((resolve, reject) => {
         fetch(`https://jsonplaceholder.typicode.com/${option}/${id}`)
             .then((response) => {
-                if (!response.ok) {
-                    throw new Error('Network response has had failure or it has been the incorrect input!');
+                if ((id < 1 || id > 100) && option !== COMMENT_OPTION) {
+                    throw new Error('Network response has had the incorrect input!');
+                } else if (!response.ok) {
+                    console.log(response)
+                    throw new Error('Network response has had failure or you have input the incorrect data!');
                 }
                 return response.json();
             })

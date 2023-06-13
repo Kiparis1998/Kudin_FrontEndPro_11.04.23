@@ -85,7 +85,6 @@ body {
 .warning {
     position: absolute;
     top: 65px;
-    left: 82px;
     width: 470px;
     height: 25px;
     color: red;
