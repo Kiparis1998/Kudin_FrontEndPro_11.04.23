@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    position: relative;
+    height: 1000px;
+    width: 100%;
+    background-color: #b3b3b4;
+}
+
+.form-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 1000px;
+    width: 90%;
+}
+
+.search-form {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 40%;
+}
+
+.input-block {
+    display: flex;
+    flex-direction: column;
+}
+
+#search {
+    height: 18px;
+    width: 250px;
+    border: 1px solid white;
+    background-color: white;
+}
+
+.search-warning {
+    border: 1px solid red;
+    color: red;
+}
+
+.message {
+    height: 20px;
+    width: 250px;
+    color: red;
+}
+
+.button-search {
+    margin-left: 10px;
+    height: 21px;
+    width: 60px;
+    color: white;
+    background-color: green;
+    border: 1px solid green;
+    cursor: pointer;
+}
+
+.info-block {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    background-color: #9f9d9e;
+    border: 4px solid #005501;
+}
+
+.info-block-city,
+.info-block-temp,
+.info-block-pressure,
+.info-block-description,
+.info-block-humidity,
+.info-block-speed,
+.info-block-deg {
+    color: #000000;
+}
+
+.info-block-icon {
+    width: 60px;
+    height: 60px;
+}
+
+.remove-button {
+    margin-bottom: 10px;
+    height: 21px;
+    width: 130px;
+    color: white;
+    background-color: red;
+    border: 1px solid red;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
