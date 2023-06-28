@@ -41,7 +41,6 @@ function validateData() {
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
-    console.log(dateOfBirth.value !== false)
     try {
         const result = validateData();
         const row = document.createElement('tr');
