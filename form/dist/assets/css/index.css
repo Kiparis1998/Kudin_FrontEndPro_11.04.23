@@ -1,3 +1,5 @@
+/* Adding style for html */
+
 .wrapper {
     margin: 200px auto;
     width: 50%;
@@ -56,4 +58,3 @@ th {
 .warning-border {
     border: 2px solid red;
 }
-

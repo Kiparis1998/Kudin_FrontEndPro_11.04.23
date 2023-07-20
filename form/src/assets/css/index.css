@@ -1,0 +1,60 @@
+/* Adding style for html */
+
+.wrapper {
+    margin: 200px auto;
+    width: 50%;
+}
+
+.block-form {
+    margin: 0 auto;
+    padding: 30px;
+    width: 300px;
+    background-color: #b3b3b4;
+}
+
+#name,
+#date-of-birth,
+#female,
+#city,
+#English,
+#email {
+    margin-bottom: 15px;
+}
+
+#email {
+    margin-top: 10px;
+}
+
+#address {
+    margin-bottom: 10px;
+    resize: none;
+    width: 250px;
+}
+
+table, tr, td, th {
+    border: 2px solid green;
+    text-align: center;
+}
+
+th {
+    width: 300px;
+}
+
+.block-form_return-button {
+    margin: 20px auto 0;
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+.message {
+    display: block;
+    margin-bottom: 10px;
+    color: red;
+}
+
+.warning-border {
+    border: 2px solid red;
+}
