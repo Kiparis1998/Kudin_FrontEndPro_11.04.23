@@ -1,0 +1,24 @@
+.Navigation {
+    width: 25%;
+    background-color: #b3b3b4;
+}
+
+.Navigation-option {
+    margin: 0 auto 5px;
+    width: 95%;
+    height: 130px;
+    text-align: center;
+    line-height: 130px;
+    font-size: 20px;
+    font-family: Roboto, sans-serif;
+    color: #000000;
+}
+
+.Navigation-option:first-child {
+    background-color: black;
+    color: white;
+}
+
+.Navigation-option:last-child {
+    margin-bottom: 0;
+}
