@@ -1,0 +1,18 @@
+.Emoji-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.Emoji-counter {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.Emoji-opacity {
+    opacity: .3;
+}
