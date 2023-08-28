@@ -1,0 +1,15 @@
+.Form-container {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.Button-style {
+    display: block;
+    margin: 30px auto 0;
+    width: 120px;
+    height: 30px;
+    border: 1px solid #9f9d9e;
+    background-color: #9f9d9e;
+    color: white;
+    cursor: pointer;
+}

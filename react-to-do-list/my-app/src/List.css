@@ -1,0 +1,17 @@
+.List-style {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    min-height: 200px;
+    margin: 0 auto 40px;
+    background-color: #969495;
+}
+
+.Text-style {
+    display: block;
+    margin: 0 auto;
+    height: 30px;
+    align-content: center;
+    background-color: #969495;
+    color: white;
+}

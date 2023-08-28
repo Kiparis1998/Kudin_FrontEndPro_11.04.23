@@ -1,0 +1,17 @@
+.Task-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: 60%;
+    height: 35px;
+    margin: 0 auto 20px;
+    background-color: #b3b3b4;
+    cursor: pointer;
+}
+
+.Task-style {
+    display: block;
+    margin: 0 auto;
+    color: white;
+}
