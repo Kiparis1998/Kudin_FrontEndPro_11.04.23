@@ -1,0 +1,13 @@
+.table-style {
+    margin: 0 auto 30px;
+    width: 50%;
+}
+
+tbody {
+    text-align: center;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid black;
+}

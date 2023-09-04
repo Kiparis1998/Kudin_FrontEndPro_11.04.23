@@ -1,0 +1,18 @@
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-style {
+    width: 90px;
+    height: 25px;
+    border: 1px solid #9f9d9e;
+    background-color: #9f9d9e;
+    color: white;
+    cursor: pointer;
+}
+
+.button-form {
+    margin-bottom: 10px;
+}
