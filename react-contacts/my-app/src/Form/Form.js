@@ -1,8 +1,8 @@
 import './Form.css';
 import { useState } from "react";
-import { useContactsDispatch } from "./ContactsContext.js";
-import { useModal } from "./App.js";
-import Button from "./Button";
+import { useContactsDispatch } from "../ContactsContext/ContactsContext.js";
+import { useModal } from "../ModalContext/ModalContext";
+import Button from "../Button/Button";
 import uniqId from 'uniqid';
 
 const Form = ({ modalHandler }) => {
@@ -46,8 +46,8 @@ const Form = ({ modalHandler }) => {
                     <input type='number' placeholder='Input your phone' value={phone} onChange={(event) => setPhone(event.target.value)} />
                 </div>
                 <div className='button-wrapper'>
-                    <Button aim='Save' saveHandler={saveHandler}/>
-                    <Button aim='Cancel' modalHandler={closeModalHandler}/>
+                    <Button text='Save' type='submit' className='button-style button-form' saveHandler={saveHandler}/>
+                    <Button text='Cancel' className='button-style button-form' modalHandler={closeModalHandler}/>
                 </div>
             </form>
         </div>

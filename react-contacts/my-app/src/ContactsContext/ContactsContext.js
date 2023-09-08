@@ -1,5 +1,5 @@
 import { useContext, useReducer, createContext} from "react";
-import { data } from "./data";
+import { data } from "../data";
 
 const ContactsContext = createContext(null);
 const ContactsDispatchContext = createContext(null);
