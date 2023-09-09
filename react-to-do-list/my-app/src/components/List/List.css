@@ -15,3 +15,10 @@
     background-color: #969495;
     color: white;
 }
+
+.Tasks-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100px;
+}
