@@ -5,9 +5,9 @@ import UserComponent from "../../UserComponent/UserComponent";
 
 const User = () => {
     const { id } = useParams();
-    const [user,,, error] = useFetch(`https://jsonplaceholder.typicode.com/users/${id}`);
+    const [user,,, error, isLoading] = useFetch(`https://jsonplaceholder.typicode.com/users/${id}`);
     return (
-        <UserComponent user={user} error={error} />
+        <UserComponent user={user} error={error} isLoading={isLoading} />
     );
 }
 

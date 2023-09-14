@@ -1,5 +1,6 @@
 import './Button.css'
 import { Link } from "react-router-dom";
+import { abortHandler } from "../Hooks/UseFetch";
 
 const Button = ({ option }) => {
     const albumsBtn = `users/${option.toLowerCase()}`;
@@ -13,7 +14,8 @@ const Button = ({ option }) => {
     }
     return (
         <>
-            {option === 'Albums' ? checkOption(albumsBtn) : checkOption(photosBtn)}
+            {option === 'Albums' ? checkOption(albumsBtn) : option === 'Photos' ? checkOption(photosBtn) : ''}
+            {option === 'Cancel' && <button onClick={abortHandler} className='button-style'>{option}</button>}
         </>
     )
 };

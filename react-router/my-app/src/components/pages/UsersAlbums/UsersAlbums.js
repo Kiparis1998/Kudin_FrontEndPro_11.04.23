@@ -1,13 +1,14 @@
 import useFetch from "../../Hooks/UseFetch";
 
 const UsersAlbums = () => {
-    const [users,,, usersError] = useFetch('https://jsonplaceholder.typicode.com/users');
-    const [, usersAlbums,, albumsError] = useFetch('https://jsonplaceholder.typicode.com/albums');
+    const [users,,, usersError, isLoading] = useFetch('https://jsonplaceholder.typicode.com/users');
+    const [, usersAlbums,, albumsError,] = useFetch('https://jsonplaceholder.typicode.com/albums');
 
     return (
         <div className="users-block">
             <h3 className='text'>Users</h3>
             {usersError && <h2 className='text'>{usersError}</h2>}
+            {isLoading && <h2 className='text'>Loading content...</h2>}
             {users.map((user) => {
                 return (
                     <div className='user-block' key={user.id}>

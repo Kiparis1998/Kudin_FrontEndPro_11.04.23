@@ -6,12 +6,12 @@ import PhotoComponent from "../../PhotoComponent/PhotoComponent";
 
 const UserPhotos = () => {
     const { albumId } = useParams();
-    const [user,,, userError] = useFetch(`https://jsonplaceholder.typicode.com/users/${albumId}`);
-    const [, userAlbums,, albumError] = useFetch(`https://jsonplaceholder.typicode.com/albums`);
-    const [,, userPhotos, photoError] = useFetch(`https://jsonplaceholder.typicode.com/photos`);
+    const [user,,, userError,] = useFetch(`https://jsonplaceholder.typicode.com/users/${albumId}`);
+    const [, userAlbums,, albumError,] = useFetch(`https://jsonplaceholder.typicode.com/albums`);
+    const [,, userPhotos, photoError, isLoading] = useFetch(`https://jsonplaceholder.typicode.com/photos`);
     return (
         <PhotoComponent userError={userError} albumError={albumError} userAlbums={userAlbums} photoError={photoError}
-                        userPhotos={userPhotos} albumId={albumId} user={user} />
+                        userPhotos={userPhotos} albumId={albumId} user={user} isLoading={isLoading} />
     );
 }
 

@@ -23,6 +23,7 @@ const App = () => {
         <div className='button-container'>
             <Button option='Albums' />
             <Button option='Photos' />
+            <Button option='Cancel' />
         </div>
     </div>
   );
