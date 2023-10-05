@@ -1,14 +1,15 @@
-import './Button.css'
+import './Button.css';
+import Button from '@mui/material/Button';
 
-const Button = ({ text, deleteHandler, saveHandler, modalHandler, className, type = 'button' }) => {
+const ButtonComponent = ({ text, deleteHandler, saveHandler, modalHandler, className, type = 'button', color, data = false}) => {
     return (
         <div className='button-container'>
-            <button type={type} className={className} onClick={text === 'Delete' ? deleteHandler : text === 'Open form' || text === 'Cancel'
-                ? modalHandler : saveHandler}>
+            <Button variant="contained" color={color} type={type} className={className} onClick={text === 'Delete' ? deleteHandler :
+                text === 'Open form' || text === 'Cancel' ? modalHandler : saveHandler} disabled={data}>
                 {text}
-            </button>
+            </Button>
         </div>
     );
 };
 
-export default Button;
+export default ButtonComponent;

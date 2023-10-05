@@ -1,16 +1,7 @@
-.form-modal-closed {
-    display: none;
-}
-
 .form-modal-opened {
-    position: absolute;
-    z-index: 1;
-    left: 0;
-    top: 0;
     display: block;
     width: 100%;
-    height: 1000px;
-    background-color: rgba(0,0,0,0.75);
+    height: 900px;
 }
 
 .form-style {
@@ -18,16 +9,15 @@
     flex-direction: column;
     justify-content: end;
     margin: 300px auto;
-    width: 40%;
-    height: 400px;
-    background: linear-gradient(135deg, hsl(300, 40%, 20%),hsl(300, 40%, 5%));
+    width: 90%;
+    background: white;
 }
 
 .input-wrapper {
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin-bottom: 100px;
+    margin: 0 auto 100px;
 }
 
 input {
@@ -40,8 +30,9 @@ input {
     flex-direction: row;
     justify-content: end;
     width: 100%;
+    margin-bottom: 10px;
 }
 
 .button-form {
-    margin-right: 10px;
+    margin-right: 10px !important;
 }

@@ -1,5 +1,5 @@
 import { useContacts, useContactsDispatch } from "../ContactsContext/ContactsContext.js";
-import Button from "../Button/Button";
+import ButtonComponent from "../Button/Button";
 
 const PHONE = 0;
 const NAME = 0;
@@ -15,7 +15,7 @@ const Contact = ({ contact }) => {
                 <td>{filteredFullName[NAME]}</td>
                 <td>{filteredFullName[SURNAME]}</td>
                 <td>{contact.phone.split(' ')[PHONE].replace(/[^0-9]/g, '')}</td>
-                <td><Button text='Delete' className='button-style' deleteHandler={() => {
+                <td><ButtonComponent color='error' text='Delete' className='button-style' deleteHandler={() => {
                     dispatch({
                         type: 'deleted',
                         id: contact.id,
@@ -31,7 +31,7 @@ const Contact = ({ contact }) => {
                 <td>{contact.name}</td>
                 <td>{contact.surname}</td>
                 <td>{contact.phone}</td>
-                <td><Button text='Delete' className='button-style' deleteHandler={() => {
+                <td><ButtonComponent color='error' text='Delete' className='button-style' deleteHandler={() => {
                     dispatch({
                         type: 'deleted',
                         id: contact.id,
